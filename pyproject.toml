@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pythonlabs"
+name = "pylabs"
 version = "0.1.0"
 description = ""
 authors = ["Parth Thakkar <parth.techblogs@gmail.com>"]
