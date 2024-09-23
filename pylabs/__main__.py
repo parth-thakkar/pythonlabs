@@ -1,7 +1,11 @@
+from fastapi import FastAPI
 
-def main():
-    print("This is the main method called")
+
+
+app = FastAPI()
+
 
 
 if __name__ == "__main__":
-    main()
+    from uvicorn import run
+    run(app)
