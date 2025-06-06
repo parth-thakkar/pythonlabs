@@ -5,6 +5,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.utils import resample
 import pandas as pd
 
+####
+#  https://medium.com/@corymaklin/isolation-forest-799fceacdda4
+####
 
 
 def test1():
@@ -31,4 +34,3 @@ def test1():
 
 
 
-    # https://medium.com/@corymaklin/isolation-forest-799fceacdda4
