@@ -17,3 +17,14 @@ voting_clf = VotingClassifier(
 
 voting_clf.fit(X_train, y_train)
 print(voting_clf.estimators_)
+print(voting_clf.estimators)
+print(type(X_test))
+print(X_test.ndim)
+print(X_test)
+print(y_test)
+
+for name, clf in voting_clf.named_estimators_.items():
+    print(name,"=", clf.__class__.__name__ , ",",clf.score(X_test, y_test))
+
+for name, clf in voting_clf.named_estimators_.items():
+    print(f"{name}: {clf.score(X_test, y_test):.2f}")
