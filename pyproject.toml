@@ -16,7 +16,15 @@ pandas = "^2.2.3"
 jupyter = "^1.1.1"
 pip = "^25.1.1"
 
+[tools.poetry]
+packages = [{include = "*", from="src"}]
+
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start = "uvicorn timeserver:app --host 0.0.0.0 --port 8000 --reload"
+run = "__main__:main"
