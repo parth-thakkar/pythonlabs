@@ -15,6 +15,9 @@ scikit-learn = "^1.6.1"
 pandas = "^2.2.3"
 jupyter = "^1.1.1"
 pip = "^25.1.1"
+langgraph = "^1.0.5"
+langchain = "^1.2.0"
+langchain-openai = "^1.1.6"
 
 [tools.poetry]
 packages = [{include = "*", from="src"}]
